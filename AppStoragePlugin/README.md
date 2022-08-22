@@ -15,10 +15,11 @@ app.use(AppStoragePlugin);
 app.mount('#app')
 ```
 
-You can also pass in an optional parameter
+You can also pass in the following optional parameters
 ```
-app.use(AppStoragePlugin,{salt:'S3cRetVa!ue'});
+app.use(AppStoragePlugin,{salt:'S3cRetVa!ue', persistent = true});
 ```
+By default `persistent` is set to true but it can be changed based on requirement.
 
 ### Use the methods exposed by the plugin
 
